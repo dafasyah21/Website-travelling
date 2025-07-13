@@ -1,1 +1,2 @@
 # Website-travelling
+Website ini berisi tentang informasi mengenai objek wisata yang berada khusus wilayah Sumatera Utara dan memperkenalkan budaya-budaya yang ada di sekitar, website ini juga berisi artikel-artikel seputar Sumatera Utara. Fitur utama pada website ini ada section rekomendasi travel, rekomendasi penginapan sebagai pihat ketiga dari website resmi, blog, mini maps, informasi objek wisata, dan gallery. 
