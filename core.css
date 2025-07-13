@@ -1,0 +1,120 @@
+@import url(navbar.css);
+@import url(footer.css);
+@import url(rating.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.hero img{
+    height: 500px;
+    width: 100%;
+    max-width: 1300px;
+    object-fit: cover;
+}
+
+.wisata-deskripsi {
+    padding: 55px;
+    margin: 20px;
+    max-width: 100%;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.wisata-deskripsi h1 {
+    font-size: 65px;
+    margin-bottom: 25px;
+    font-family: "Playfair Display", serif;
+}
+
+.wisata-deskripsi h2{
+    font-size: 35px;
+    margin-bottom: 25px;
+    font-family: "Playfair Display", serif;
+}
+
+.wisata-deskripsi p {
+    color: #666;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 10px 0 20px 0;
+    font-weight: 100;
+}
+
+.wisata-deskripsi img {
+    width: 100%;
+    height: 500px;
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 25px;
+    object-fit: cover;
+}
+
+.wisata-info {
+    margin-bottom: 2rem;
+    margin-left: 70px;
+    padding-left: 55px;
+    color: #666;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 1150px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.wisata-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.wisata-info li {
+    padding: 0.5rem 0;
+}
+
+.wisata-info li strong {
+    color: #333;
+}
+
+.info-layout {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding-right: 30px;
+    margin-bottom: 65px;
+}
+
+.info-list {
+    flex: 2;
+    line-height: 1.7;
+}
+
+.info-list h2 {
+    color: #333;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+
+.info-map {
+    flex: 1;
+    min-height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-map iframe {
+    margin-right: 50px;
+    max-width: 500px;
+    height: 350px;
+}

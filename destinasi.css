@@ -1,0 +1,386 @@
+@import url(navbar.css);
+@import url(footer.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  color: #fff;
+}
+
+.hero {
+  height: 550px;
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)),
+    url("image/holbung.jpg");
+  background-position: center;
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 230px;
+  line-height: 1.3;
+}
+
+.hero h2 {
+  font-size: 90px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+}
+
+.teks {
+  text-align: center;
+}
+
+.deskripsi {
+  background-color: #fff;
+  display: flex;
+}
+
+.deskripsi-container {
+  font-family: sans-serif;
+  color: #333;
+  margin: 20px;
+  max-width: 50%;
+  padding: 35px;
+}
+
+.deskripsi-container h3 {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #333;
+  font-size: 55px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-family: "Playfair Display", serif;
+}
+
+.deskripsi-container p {
+  text-align: justify;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.deskripsi-img {
+  padding: 40px 0 20px 50px;
+  display: grid;
+  gap: 15px;
+  max-width: 50%;
+  margin-top: 30px;
+}
+
+.deskripsi-img img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.galeri-section {
+  background-color: #fff;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+}
+
+.galeri-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px; 
+  align-items: center; 
+  max-width: 1200px;
+  width: 100%;
+}
+
+.galeri-img {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.galeri-img img {
+    width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.galeri-teks h3 {
+  font-size: 35px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.galeri-teks p {
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+.destinasi-section {
+    padding: 80px 40px;
+    background-color: #ffffff;
+}
+
+.destinasi-title {
+    text-align: left;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.destinasi-title h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 38px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.destinasi-title a {
+    text-decoration: none;
+    color: #333;
+    padding-top: 8px;
+}
+
+.destinasi-title a:hover {
+    border-bottom: 1px solid #333;
+}
+
+.galeri {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #ffffff;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px  rgba(0, 0, 0, 0.12);
+    border: 1px solid black;
+}
+
+.card img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.card-konten {
+    padding: 20px;
+}
+
+.card-konten h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 20px;
+}
+
+.card-konten p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+
+.hero-slider {
+    display: flex;
+    width: 100%;
+    height: 100vh; 
+    background-color: #1a1a1a;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 25px;
+    margin-bottom: 70px;
+}
+
+
+.slider-info {
+    width: 45%;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.info-item {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
+.info-item.active {
+    position: relative; 
+    opacity: 1;
+}
+
+.info-spotlight {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.info-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.info-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.6;
+    max-width: 450px;
+    margin-bottom: 40px;
+}
+
+.info-button {
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    text-decoration: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+.info-button:hover {
+   background-color: #fff ;
+   color: #000000;
+}
+
+
+.slider-nav {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    right: 60px;
+    display: flex;
+    align-items: center;
+}
+.nav-counter {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+}
+.current-slide { font-weight: bold; }
+
+.nav-progress-bar {
+    flex-grow: 1;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 0 20px;
+}
+.progress {
+    width: 0%; /* Diatur oleh JS */
+    height: 100%;
+    background-color: #fff;
+    transition: width 0.4s ease-out;
+}
+
+.nav-arrows .nav-arrow {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.5);
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.nav-arrows .nav-arrow:hover {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.slider-images {
+    width: 55%;
+    overflow: hidden;
+}
+.slider-images-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.8s cubic-bezier(0.77, 0, 0.175, 1);
+    /* Atur jarak antar kartu di sini */
+    gap: 2%; /* Misalnya, jarak 2% dari lebar kontainer */
+}
+
+.slide-image {
+    flex: 0 0 70%; 
+    height: 90%; 
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    align-self: center;
+}
+
+.slide-image:hover {
+    transform: scale(1.01); 
+}
+
+.slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+.image-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 40px;
+    color: #fff;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+.image-caption h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+}
+.image-caption p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}

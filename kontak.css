@@ -1,0 +1,138 @@
+@import url(navbar.css);
+@import url(footer.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page-header {
+  height: 670px;
+  color: white; 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('image/danautoba3.jpg');
+  background-position: center;
+  background-size: cover;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 270px;
+  padding-left: 120px;
+  line-height: 1.3;
+}
+
+.page-header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+  padding-top: 45px;
+}
+
+.contact-section {
+  padding: 80px 40px;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info-form h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.contact-info-form p {
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.contact-details {
+  margin-bottom: 40px;
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.detail-item .contact-icon {
+  width: 24px;
+  height: 24px;
+  fill: #007BFF;
+}
+
+.detail-item a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.detail-item a:hover {
+    color: #007BFF;
+}
+
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #007BFF;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+}
+
+/* Tombol Kirim Pesan */
+.contact-form .btn-primary {
+  width: 100%;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Peta di Kolom Kanan */
+.map-container {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* === RESPONSIVE HALAMAN KONTAK === */
+@media (max-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}

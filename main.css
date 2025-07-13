@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+.hotel-section-container {
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    display: flex; 
+    align-items: center; 
+    gap: 24px;
+    width: 100%;
+    max-width: 1300px;
+    margin: 40px auto;
+    background-size: cover;
+    background-position: center;
+    padding: 40px 50px;
+    position: relative; 
+    min-height: 450px;
+    overflow: hidden; 
+}
+
+.featured-hotel {
+    flex: 1; 
+    max-width: 40%; 
+    z-index: 2; 
+}
+
+.featured-hotel h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #2ecc71; 
+    margin-bottom: 8px;
+}
+
+.featured-hotel h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.featured-hotel p {
+    font-size: 16px;
+    color: #bdc3c7; 
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+
+.jelajahi-btn {
+    display: inline-block;
+    background-color: #2ecc71;
+    color: #ffffff;
+    padding: 12px 28px;
+    border-radius: 50px; 
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.jelajahi-btn:hover {
+    background-color: #27ae60; 
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 15px rgba(46, 204, 113, 0.2);
+}
+
+
+.hotel-list-wrapper {
+    flex: 1;
+    overflow-x: auto; 
+    z-index: 2;
+    padding-bottom: 20px; 
+}
+
+.hotel-list-wrapper h2 {
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.hotel-list {
+    display: flex; 
+    gap: 20px; 
+}
+
+
+.hotel-card {
+    flex-shrink: 0; 
+    width: 240px;
+    height: 360px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.hotel-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: transform 0.4s ease;
+}
+
+.hotel-card:hover img {
+    transform: scale(1.1);
+}
+
+
+.card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+}
+
+.card-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    color: #ffffff;
+}
+
+.card-category {
+    font-size: 14px;
+    color: #bdc3c7;
+    margin: 0;
+}

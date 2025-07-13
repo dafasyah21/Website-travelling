@@ -1,0 +1,99 @@
+main {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-bottom: 60px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Penting agar padding tidak menambah lebar */
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling untuk setiap kartu komentar */
+.comment-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.comment-card .comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comment-card .comment-author {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.comment-card .comment-rating {
+    font-weight: bold;
+    color: #f0ad4e;
+}
+
+.comment-card .comment-body {
+    font-style: italic;
+    color: #555;
+}
+
+
+.comment-container {
+    display: flex; 
+    justify-content: space-between; 
+    gap: 30px; 
+    margin-bottom: 50px;
+    max-height: 450px;
+}
+
+
+.comment-form-section,
+.comments-list-section {
+    flex: 1; 
+}
+
+
+@media (max-width: 850px) {
+    .comment-container {
+        flex-direction: column; 
+    }
+}
